@@ -45,12 +45,15 @@ gulp.task('phpspec', function() {
 		}));
 });
 
+If you want a quick and dirty gulpfile, here is one I created for testing this plugin
+
+Gist: [https://gist.github.com/mikeerickson/9163621]
 
 ```
 
 ## API
 
-### (codeceptpath,options,cb)
+### (phpspecpath,options,cb)
 
 #### phpspecpath
 
@@ -81,7 +84,7 @@ Call user supplied callback to handle notification (use gulp-notify)
 
 ## Credits
 
-gulp-codeception written by Mike Erickson
+gulp-phpspec written by Mike Erickson
 
 E-Mail: [codedungeon@gmail.com](mailto:codedungeon@gmail.com)
 

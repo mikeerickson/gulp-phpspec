@@ -2,10 +2,10 @@
 
 'use strict';
 
-var map = require('map-stream'),
-	gutil = require('gulp-util'),
-	   os = require('os'),
-	 exec = require('child_process').exec;
+var map   = require('map-stream'),
+    gutil = require('gulp-util'),
+    os    = require('os'),
+    exec  = require('child_process').exec;
 
 module.exports = function(command, opt){
 	var counter = 0;
@@ -15,7 +15,7 @@ module.exports = function(command, opt){
 		throw new Error('Invalid PHPSpec Binary');
 	}
 
-	// if path to codecept bin not supplied, use default vendor/bin path
+	// if path to phpspec bin not supplied, use default vendor/bin path
 	if(! command) {
 		command = './vendor/bin/phpspec run';
 		if (os.platform() === 'win32') {

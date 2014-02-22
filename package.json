@@ -23,10 +23,7 @@
     "gulpplugin",
     "phpspec"
   ],
-  "author": {
-    "name": "Mike Erickson",
-    "email": "codedungeon@gmail.com"
-  },
+  "author": "Mike Erickson <codedungeon@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mikeerickson/gulp-phpspec/issues"
