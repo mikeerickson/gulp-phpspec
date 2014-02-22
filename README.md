@@ -51,7 +51,7 @@ gulp.task('phpspec', function() {
 
 If you want a quick and dirty gulpfile, here is one I created for testing this plugin
 
-[Gist](https://gist.github.com/mikeerickson/9163621)
+[Gist: https://gist.github.com/mikeerickson/9163621](https://gist.github.com/mikeerickson/9163621)
 
 
 ## API
