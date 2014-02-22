@@ -45,11 +45,14 @@ gulp.task('phpspec', function() {
 		}));
 });
 
+```
+
+### Sample Gulpfile
+
 If you want a quick and dirty gulpfile, here is one I created for testing this plugin
 
-(https://gist.github.com/mikeerickson/9163621)
+[Gist]: (https://gist.github.com/mikeerickson/9163621)
 
-```
 
 ## API
 
