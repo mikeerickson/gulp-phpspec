@@ -52,12 +52,12 @@ gulp.task('phpspec', function() {
 
 ### (codeceptpath,options,cb)
 
-#### codeceptpath
+#### phpspecpath
 
 Type: `String`
 
-The path to the desired Codeception binary
-- If not supplied, the defeault path will be ./vendor/bin/codecept
+The path to the desired PHPSpec binary
+- If not supplied, the defeault path will be ./vendor/bin/phpspec
 
 #### options.debug
 Type: `Boolean (Default: false)`
@@ -69,54 +69,15 @@ Type: `Boolean (Default: false)`
 
 Clear console before executing command
 
-#### options.testClass
-Type: `String`
-
-Define a specific class for testing (supply full path to test class)
-
-#### options.testSuite
-Type: `String (Default all suites)`
-
-Define a specific test suite to execute (acceptance, unit, functional)
-Note: You can also supply any custom suites you may have created
-
-#### options.flags
-Type: `String (Default no flags)`
-
-Define any custom flags you may wish to use during testing
-
-```
-var opts = {flags: '--silent --report'}
-```
 
 #### options.notify
 Type: `Boolean (Default: false)`
 
 Call user supplied callback to handle notification (use gulp-notify)
 
-#### options.skipSuite
-Type: `Array (Default: [])`
-
-List of suite(s) to skip during test run
-
 ## Changelog
 
-- 0.4.0: Expanded API
-    - Added new option opts.skipSuite
-    - Expanded plugin tests
-    - Updated dependencies for jsHint and Mocha
-
-- 0.3.0: Updated package.json to include test dependencies and scripts
-    - Added updated test script (calls mocha and jshint)
-
-- 0.2.0: Update Default Command - Windows Fix
-    - Fixed default command when using windows
-
-- 0.1.2: Code Refactoring and Cleanup
-    - Added test/test.js
-    - Updated documentation
-
-- 0.0.1: Initial Release
+- 0.1.0: Initial Release
 
 ## Credits
 
