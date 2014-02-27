@@ -52,7 +52,7 @@ module.exports = function(command, opt){
 			cmd.trim(); // clean up any space remnants
 
 			if (opt.debug) {
-				console.log(gutil.colors.yellow('\n       *** Debug Cmd: ' + cmd + '***\n'));
+				gutil.log(gutil.colors.yellow('\n       *** Debug Cmd: ' + cmd + '***\n'));
 			}
 
 			exec(cmd, function (error, stdout, stderr) {
@@ -70,7 +70,7 @@ module.exports = function(command, opt){
 				}
 
 				if(opt.debug && error) {
-					console.log(error);
+					gutil.log(error);
 				}
 
 				if (opt.notify) {

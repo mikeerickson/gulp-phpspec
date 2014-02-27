@@ -1,4 +1,4 @@
-# gulp-codception
+# gulp-phpspec
 > PHPSpec plugin for gulp 3
 
 ## Usage
@@ -82,6 +82,13 @@ Type: `Boolean (Default: false)`
 Call user supplied callback to handle notification (use gulp-notify)
 
 ## Changelog
+
+- 0.2.0: Code Cleanup
+    - Removed calls to console.log -> gutil.log (playing nice in the playground)
+    - Fixed issue with calling as dependency task (thanks @taai)
+
+- 0.1.1: Code Cleanup
+    - Removed calls to console.log -> gutil.log (playing nice in the playground)
 
 - 0.1.0: Initial Release
 
