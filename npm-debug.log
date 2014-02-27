@@ -1,0 +1,138 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/mikee/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz
+12 verbose folder .
+13 info prepublish gulp-phpspec@0.1.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/mikee/.npm/1f1177db-tar.lock
+16 silly lockFile 5fb28ce1-6157-0-10382777941413224-tmp-tgz tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz
+17 verbose lock tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz /Users/mikee/.npm/5fb28ce1-6157-0-10382777941413224-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 5fb28ce1-6157-0-10382777941413224-tmp-tgz tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz
+21 silly lockFile 5fb28ce1-6157-0-10382777941413224-tmp-tgz tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz
+22 verbose tar unpack /Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz
+23 silly lockFile cc13e77f-6157-0-10382777941413224-package tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package
+24 verbose lock tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package /Users/mikee/.npm/cc13e77f-6157-0-10382777941413224-package.lock
+25 silly lockFile 5fb28ce1-6157-0-10382777941413224-tmp-tgz tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz
+26 verbose lock tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz /Users/mikee/.npm/5fb28ce1-6157-0-10382777941413224-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry LICENSE
+32 silly gunzTarPerm extractEntry index.js
+33 silly gunzTarPerm extractEntry .jshintrc
+34 silly gunzTarPerm extractEntry test/test.js
+35 silly lockFile cc13e77f-6157-0-10382777941413224-package tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package
+36 silly lockFile cc13e77f-6157-0-10382777941413224-package tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package
+37 silly lockFile 5fb28ce1-6157-0-10382777941413224-tmp-tgz tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz
+38 silly lockFile 5fb28ce1-6157-0-10382777941413224-tmp-tgz tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/tmp.tgz
+39 verbose tar pack [ '/Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz',
+39 verbose tar pack   '/Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package' ]
+40 verbose tarball /Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz
+41 verbose folder /Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package
+42 silly lockFile cc13e77f-6157-0-10382777941413224-package tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package
+43 verbose lock tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package /Users/mikee/.npm/cc13e77f-6157-0-10382777941413224-package.lock
+44 silly lockFile 497d90be-m-gulp-phpspec-0-1-0-package-tgz tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz
+45 verbose lock tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz /Users/mikee/.npm/497d90be-m-gulp-phpspec-0-1-0-package-tgz.lock
+46 silly lockFile cc13e77f-6157-0-10382777941413224-package tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package
+47 silly lockFile cc13e77f-6157-0-10382777941413224-package tar:///Users/mikee/tmp/npm-48984-YuO1tEEP/1393532096157-0.10382777941413224/package
+48 silly lockFile 497d90be-m-gulp-phpspec-0-1-0-package-tgz tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz
+49 silly lockFile 497d90be-m-gulp-phpspec-0-1-0-package-tgz tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz
+50 silly lockFile f6db6f20-e-npm-gulp-phpspec-0-1-0-package /Users/mikee/.npm/gulp-phpspec/0.1.0/package
+51 verbose lock /Users/mikee/.npm/gulp-phpspec/0.1.0/package /Users/mikee/.npm/f6db6f20-e-npm-gulp-phpspec-0-1-0-package.lock
+52 silly lockFile f6db6f20-e-npm-gulp-phpspec-0-1-0-package /Users/mikee/.npm/gulp-phpspec/0.1.0/package
+53 silly lockFile f6db6f20-e-npm-gulp-phpspec-0-1-0-package /Users/mikee/.npm/gulp-phpspec/0.1.0/package
+54 verbose tar unpack /Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz
+55 silly lockFile 702e6e3b-e-npm-gulp-phpspec-0-1-0-package tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package
+56 verbose lock tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package /Users/mikee/.npm/702e6e3b-e-npm-gulp-phpspec-0-1-0-package.lock
+57 silly lockFile 497d90be-m-gulp-phpspec-0-1-0-package-tgz tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz
+58 verbose lock tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz /Users/mikee/.npm/497d90be-m-gulp-phpspec-0-1-0-package-tgz.lock
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm extractEntry .npmignore
+62 silly gunzTarPerm extractEntry README.md
+63 silly gunzTarPerm extractEntry LICENSE
+64 silly gunzTarPerm extractEntry index.js
+65 silly gunzTarPerm extractEntry .jshintrc
+66 silly gunzTarPerm extractEntry test/test.js
+67 silly lockFile 702e6e3b-e-npm-gulp-phpspec-0-1-0-package tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package
+68 silly lockFile 702e6e3b-e-npm-gulp-phpspec-0-1-0-package tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package
+69 silly lockFile 497d90be-m-gulp-phpspec-0-1-0-package-tgz tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz
+70 silly lockFile 497d90be-m-gulp-phpspec-0-1-0-package-tgz tar:///Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz
+71 verbose chmod /Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz 644
+72 verbose chown /Users/mikee/.npm/gulp-phpspec/0.1.0/package.tgz [ 0, 20 ]
+73 silly lockFile 3a52ce78- .
+74 silly lockFile 3a52ce78- .
+75 silly publish { name: 'gulp-phpspec',
+75 silly publish   version: '0.1.0',
+75 silly publish   description: 'PHP PHPSpec plugin for Gulp',
+75 silly publish   main: 'index.js',
+75 silly publish   dependencies: { 'map-stream': '0.0.4', 'gulp-util': '~2.2.14' },
+75 silly publish   devDependencies: { jshint: '~2.4.4', mocha: '~1.17.1', should: '~3.1.2' },
+75 silly publish   scripts: { test: 'mocha && jshint ./*.js && jshint ./test/*.js' },
+75 silly publish   repository:
+75 silly publish    { type: 'git',
+75 silly publish      url: 'git://github.com/mikeerickson/gulp-phpspec' },
+75 silly publish   keywords: [ 'gulpplugin', 'phpspec' ],
+75 silly publish   author: { name: 'Mike Erickson', email: 'codedungeon@gmail.com' },
+75 silly publish   license: 'MIT',
+75 silly publish   bugs: { url: 'https://github.com/mikeerickson/gulp-phpspec/issues' },
+75 silly publish   engines: { node: '>=0.10.0' },
+75 silly publish   homepage: 'https://github.com/mikeerickson/gulp-phpspec',
+75 silly publish   directories: { test: 'test' },
+75 silly publish   readme: '# gulp-phpspec\n> PHPSpec plugin for gulp 3\n\n## Usage\n\nFirst, install `gulp-phpspec` as a development dependency:\n\n```shell\nnpm install --save-dev gulp-phpspec\n```\n\nThen, add it to your `gulpfile.js`:\n\n```javascript\nvar phpspec = require(\'gulp-phpspec\');\n\n// option 1: default format\ngulp.task(\'phpspec\', function() {\n\tgulp.src(\'./spec/**/*.php\').pipe(phpspec());\n});\n\n// option 2: with defined bin and options\ngulp.task(\'phpspec\', function() {\n\tvar options = {debug: false};\n\tgulp.src(\'./spec/**/*.php\').pipe(phpspec(\'./vendor/bin/phpspec run\',options));\n});\n\n// option 3: supply callback to integrate something like notification (using gulp-notify)\n\nvar gulp    = require(\'gulp\'),\n    notify  = require(\'gulp-notify\'),\n    phpspec = require(\'gulp-phpspec\');\n\ngulp.task(\'phpspec\', function() {\n\tvar options = {notify: false};\n\tgulp.src(\'app/spec/**/*.php\')\n\t\t.pipe(phpspec(\'\', options))\n\t\t.on(\'error\', notify.onError({\n\t\t\ttitle: "Testing Failed",\n\t\t\tmessage: "Error(s) occurred during test..."\n\t\t}))\n\t\t.pipe(notify({\n\t\t\ttitle: "Testing Passed",\n\t\t\tmessage: "All tests have passed..."\n\t\t}));\n});\n\n```\n\n### Sample Gulpfile\n\nIf you want a quick and dirty gulpfile, here is one I created for testing this plugin\n\n[Gist: https://gist.github.com/mikeerickson/9163621](https://gist.github.com/mikeerickson/9163621)\n\n\n## API\n\n### (phpspecpath,options,cb)\n\n#### phpspecpath\n\nType: `String`\n\nThe path to the desired PHPSpec binary\n- If not supplied, the defeault path will be ./vendor/bin/phpspec\n\n#### options.debug\nType: `Boolean (Default: false)`\n\nEmit error details and shows command used in console\n\n#### options.clear\nType: `Boolean (Default: false)`\n\nClear console before executing command\n\n\n#### options.notify\nType: `Boolean (Default: false)`\n\nCall user supplied callback to handle notification (use gulp-notify)\n\n## Changelog\n\n- 0.2.0: Code Cleanup\n    - Removed calls to console.log -> gutil.log (playing nice in the playground)\n    - Fixed issue with calling as dependency task (thanks @taai)\n\n- 0.1.1: Code Cleanup\n    - Removed calls to console.log -> gutil.log (playing nice in the playground)\n\n- 0.1.0: Initial Release\n\n## Credits\n\ngulp-phpspec written by Mike Erickson\n\nE-Mail: [codedungeon@gmail.com](mailto:codedungeon@gmail.com)\n\nTwitter: [@codedungeon](http://twitter.com/codedungeon)\n\nWebiste: [codedungeon.org](http://codedungeon.org)',
+75 silly publish   readmeFilename: 'README.md',
+75 silly publish   _id: 'gulp-phpspec@0.1.0',
+75 silly publish   dist: { shasum: 'a47e86ee7efb4fd825812f7e89c8aa8d7ffb2cda' },
+75 silly publish   _from: '.' }
+76 verbose url raw gulp-phpspec
+77 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-phpspec' ]
+78 verbose url resolved https://registry.npmjs.org/gulp-phpspec
+79 info trying registry request attempt 1 at 12:14:56
+80 http PUT https://registry.npmjs.org/gulp-phpspec
+81 http 403 https://registry.npmjs.org/gulp-phpspec
+82 error publish Failed PUT 403
+83 error Error: forbidden cannot modify pre-existing version: 0.1.0
+83 error old={"name":"gulp-phpspec","version":"0.1.0","description":"PHP PHPSpec plugin for Gulp","main":"index.js","dependencies":{"map-stream":"0.0.4","gulp-util":"~2.2.14"},"devDependencies":{"jshint":"~2.4.4","mocha":"~1.17.1","should":"~3.1.2"},"scripts":{"test":"mocha && jshint ./*.js && jshint ./test/*.js"},"repository":{"type":"git","url":"git://github.com/mikeerickson/gulp-phpspec"},"keywords":["gulpplugin","phpspec"],"author":{"name":"Mike Erickson","email":"codedungeon@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/mikeerickson/gulp-phpspec/issues"},"engines":{"node":">=0.10.0"},"homepage":"https://github.com/mikeerickson/gulp-phpspec","directories":{"test":"test"},"_id":"gulp-phpspec@0.1.0","dist":{"shasum":"f6846f4e1ce270a630bceb07cf060817380ddad3","tarball":"http://registry.npmjs.org/gulp-phpspec/-/gulp-phpspec-0.1.0.tgz"},"_from":"./","_npmVersion":"1.3.15","_npmUser":{"name":"codedungeon","email":"codedungeon@gmail.com"},"maintainers":[{"name":"codedungeon","email":"codedungeon@gmail.com"}]}
+83 error new={"name":"gulp-phpspec","version":"0.1.0","description":"PHP PHPSpec plugin for Gulp","main":"index.js","dependencies":{"map-stream":"0.0.4","gulp-util":"~2.2.14"},"devDependencies":{"jshint":"~2.4.4","mocha":"~1.17.1","should":"~3.1.2"},"scripts":{"test":"mocha && jshint ./*.js && jshint ./test/*.js"},"repository":{"type":"git","url":"git://github.com/mikeerickson/gulp-phpspec"},"keywords":["gulpplugin","phpspec"],"author":{"name":"Mike Erickson","email":"codedungeon@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/mikeerickson/gulp-phpspec/issues"},"engines":{"node":">=0.10.0"},"homepage":"https://github.com/mikeerickson/gulp-phpspec","directories":{"test":"test"},"readme":"# gulp-phpspec\u000a> PHPSpec plugin for gulp 3\u000a\u000a## Usage\u000a\u000aFirst, install `gulp-phpspec` as a development dependency:\u000a\u000a```shell\u000anpm install --save-dev gulp-phpspec\u000a```\u000a\u000aThen, add it to your `gulpfile.js`:\u000a\u000a```javascript\u000avar phpspec = require('gulp-phpspec');\u000a\u000a// option 1: default format\u000agulp.task('phpspec', function() {\u000a\u0009gulp.src('./spec/**/*.php').pipe(phpspec());\u000a});\u000a\u000a// option 2: with defined bin and options\u000agulp.task('phpspec', function() {\u000a\u0009var options = {debug: false};\u000a\u0009gulp.src('./spec/**/*.php').pipe(phpspec('./vendor/bin/phpspec run',options));\u000a});\u000a\u000a// option 3: supply callback to integrate something like notification (using gulp-notify)\u000a\u000avar gulp    = require('gulp'),\u000a    notify  = require('gulp-notify'),\u000a    phpspec = require('gulp-phpspec');\u000a\u000agulp.task('phpspec', function() {\u000a\u0009var options = {notify: false};\u000a\u0009gulp.src('app/spec/**/*.php')\u000a\u0009\u0009.pipe(phpspec('', options))\u000a\u0009\u0009.on('error', notify.onError({\u000a\u0009\u0009\u0009title: \"Testing Failed\",\u000a\u0009\u0009\u0009message: \"Error(s) occurred during test...\"\u000a\u0009\u0009}))\u000a\u0009\u0009.pipe(notify({\u000a\u0009\u0009\u0009title: \"Testing Passed\",\u000a\u0009\u0009\u0009message: \"All tests have passed...\"\u000a\u0009\u0009}));\u000a});\u000a\u000a```\u000a\u000a### Sample Gulpfile\u000a\u000aIf you want a quick and dirty gulpfile, here is one I created for testing this plugin\u000a\u000a[Gist: https://gist.github.com/mikeerickson/9163621](https://gist.github.com/mikeerickson/9163621)\u000a\u000a\u000a## API\u000a\u000a### (phpspecpath,options,cb)\u000a\u000a#### phpspecpath\u000a\u000aType: `String`\u000a\u000aThe path to the desired PHPSpec binary\u000a- If not supplied, the defeault path will be ./vendor/bin/phpspec\u000a\u000a#### options.debug\u000aType: `Boolean (Default: false)`\u000a\u000aEmit error details and shows command used in console\u000a\u000a#### options.clear\u000aType: `Boolean (Default: false)`\u000a\u000aClear console before executing command\u000a\u000a\u000a#### options.notify\u000aType: `Boolean (Default: false)`\u000a\u000aCall user supplied callback to handle notification (use gulp-notify)\u000a\u000a## Changelog\u000a\u000a- 0.2.0: Code Cleanup\u000a    - Removed calls to console.log -> gutil.log (playing nice in the playground)\u000a    - Fixed issue with calling as dependency task (thanks @taai)\u000a\u000a- 0.1.1: Code Cleanup\u000a    - Removed calls to console.log -> gutil.log (playing nice in the playground)\u000a\u000a- 0.1.0: Initial Release\u000a\u000a## Credits\u000a\u000agulp-phpspec written by Mike Erickson\u000a\u000aE-Mail: [codedungeon@gmail.com](mailto:codedungeon@gmail.com)\u000a\u000aTwitter: [@codedungeon](http://twitter.com/codedungeon)\u000a\u000aWebiste: [codedungeon.org](http://codedungeon.org)","readmeFilename":"README.md","_id":"gulp-phpspec@0.1.0","dist":{"shasum":"a47e86ee7efb4fd825812f7e89c8aa8d7ffb2cda","tarball":"http://registry.npmjs.org/gulp-phpspec/-/gulp-phpspec-0.1.0.tgz"},"_from":".","_npmVersion":"1.4.3","_npmUser":{"name":"codedungeon","email":"codedungeon@gmail.com"},"maintainers":[{"name":"codedungeon","email":"codedungeon@gmail.com"}]}: gulp-phpspec
+83 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:237:14)
+83 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+83 error     at Request.EventEmitter.emit (events.js:98:17)
+83 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+83 error     at Request.EventEmitter.emit (events.js:117:20)
+83 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+83 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+83 error     at _stream_readable.js:920:16
+83 error     at process._tickCallback (node.js:415:13)
+84 error If you need help, you may report this *entire* log,
+84 error including the npm and node versions, at:
+84 error     <http://github.com/npm/npm/issues>
+85 error System Darwin 13.1.0
+86 error command "node" "/usr/local/bin/npm" "publish"
+87 error cwd /Users/mikee/Documents/Projects/gulp-phpspec
+88 error node -v v0.10.26
+89 error npm -v 1.4.3
+90 verbose exit [ 1, true ]
