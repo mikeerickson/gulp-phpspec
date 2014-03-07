@@ -83,7 +83,8 @@ Call user supplied callback to handle notification (use gulp-notify)
 
 ## Changelog
 
-- 0.2.1: xxx
+- 0.2.1: Code Refactor and Travis Integration
+    - added travis configuration
 
 - 0.2.0: Code Cleanup
     - Removed calls to console.log -> gutil.log (playing nice in the playground)
