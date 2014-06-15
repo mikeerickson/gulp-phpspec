@@ -17,9 +17,9 @@ module.exports = function(command, opt){
 
 	// if path to phpspec bin not supplied, use default vendor/bin path
 	if(! command) {
-		command = './vendor/bin/phpspec run';
+		command = './vendor/bin/phpspec run --ansi';
 		if (os.platform() === 'win32') {
-			command = '.\\vendor\\bin\\phpspec run';
+			command = '.\\vendor\\bin\\phpspec run --ansi';
 		}
 	}
 
