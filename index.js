@@ -19,7 +19,7 @@ module.exports = function(command, opt){
 	if(! command) {
 		command = './vendor/bin/phpspec run --ansi';
 		if (os.platform() === 'win32') {
-			command = '.\\vendor\\bin\\phpspec run --ansi';
+			command = '.\\vendor\\bin\\phpspec run';
 		}
 	}
 
