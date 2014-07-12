@@ -28,12 +28,16 @@ module.exports = function(command, opt){
 
 	// assign default options if one is not supplied
 	if (typeof opt.testSuite === 'undefined') { opt.testSuite = ''; }
+	if (typeof opt.verbose === 'undefined') { opt.verbose = ''; }
 	if (typeof opt.silent === 'undefined') { opt.silent = false; }
 	if (typeof opt.debug === 'undefined') { opt.debug = false; }
 	if (typeof opt.testClass === 'undefined') { opt.testClass = ''; }
 	if (typeof opt.clear === 'undefined') { opt.clear = false; }
 	if (typeof opt.flags === 'undefined') { opt.flags = ''; }
 	if (typeof opt.notify === 'undefined') { opt.notify = false; }
+	if (typeof opt.noInteraction === 'undefined') { opt.noInteraction = true; }
+	if (typeof opt.noAnsi === 'undefined') { opt.noAnsi = false; }
+	if (typeof opt.quiet === 'undefined') { opt.quiet = false; }
 
 	return map(function (file, cb) {
 
@@ -43,6 +47,10 @@ module.exports = function(command, opt){
 		// assign default class and/or test suite
 		if (opt.testSuite) { cmd += ' ' + opt.testSuite; }
 		if (opt.testClass) { cmd += ' ' + opt.testClass; }
+		if (opt.verbose) { cmd += ' -' + opt.verbose; }
+		if (opt.quiet) { cmd += ' --quiet'; }
+		if ( ! opt.noInteraction) { cmd += ' --no-interaction'; }
+		cmd += opt.noAnsi ? ' --no-ansi' : ' --ansi';
 
 		if(counter === 0) {
 			counter++;

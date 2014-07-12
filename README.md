@@ -81,8 +81,44 @@ Type: `Boolean (Default: false)`
 
 Call user supplied callback to handle notification (use gulp-notify)
 
+#### options.verbose
+Type: `String (Default null)`
+
+Adjust the default verbosity of messages
+v|vv|vvv Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+#### options.noInteract
+Type: `Boolean (Default: false)`
+
+Do not ask any interactive question (disables code generation).
+
+#### options.noAnsi
+Type: `Boolean (Default: false)`
+
+Disable ANSI output (ommiting parameter or setting to false will display ansi colors output)
+
+#### options.quiet
+Type: `Boolean (Default: false)`
+
+Do not output any message.
+
+
 ## Changelog
 
+- 0.2.5: Bug fix introduced in 0.2.4
+
+- 0.2.4: Added options
+    - added support for quiet option
+    
+- 0.2.3: Added options
+    - added support for verbose flags
+    - added support for no-interaction flag (on by default)
+    - added flag for 'noAnsi' disabling ansi (false by default)
+    
+- 0.2.2: UI/UX Changes
+    - added color output support using --ansi switch
+    - removed Node 0.9 support from Travis integration
+    
 - 0.2.1: Code Refactor and Travis Integration
     - added travis configuration
 
