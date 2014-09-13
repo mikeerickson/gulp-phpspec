@@ -35,7 +35,7 @@ module.exports = function(command, opt){
 	if (typeof opt.clear === 'undefined') { opt.clear = false; }
 	if (typeof opt.flags === 'undefined') { opt.flags = ''; }
 	if (typeof opt.notify === 'undefined') { opt.notify = false; }
-	if (typeof opt.noInteraction === 'undefined') { opt.noInteraction = true; }
+	if (typeof opt.noInteract === 'undefined') { opt.noInteract = false; }
 	if (typeof opt.noAnsi === 'undefined') { opt.noAnsi = false; }
 	if (typeof opt.quiet === 'undefined') { opt.quiet = false; }
 
@@ -49,7 +49,7 @@ module.exports = function(command, opt){
 		if (opt.testClass) { cmd += ' ' + opt.testClass; }
 		if (opt.verbose) { cmd += ' -' + opt.verbose; }
 		if (opt.quiet) { cmd += ' --quiet'; }
-		if ( ! opt.noInteraction) { cmd += ' --no-interaction'; }
+		if (opt.noInteract) { cmd += ' --no-interaction'; }
 		cmd += opt.noAnsi ? ' --no-ansi' : ' --ansi';
 
 		if(counter === 0) {
