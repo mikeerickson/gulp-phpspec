@@ -87,8 +87,9 @@ Type: `String (Default null)`
 Adjust the default verbosity of messages
 v|vv|vvv Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 
-#### options.noInteract
+#### options.noInteraction
 Type: `Boolean (Default: false)`
+*Note: changed from noInteract -* __0.3.0__
 
 Do not ask any interactive question (disables code generation).
 
@@ -102,23 +103,34 @@ Type: `Boolean (Default: false)`
 
 Do not output any message.
 
+#### options.formatter
+Type: `String`
+
+Display PHPSpec custom formatters (ie pretty)
+
 
 ## Changelog
+
+- 0.3.0: Bug Fixes
+  - refactored noInteraction option to match PHPSpec option (was called noInteract)
+
+- 0.2.6: Added formatter option
+  - added support for -f formatter options
 
 - 0.2.5: Bug fix introduced in 0.2.4
 
 - 0.2.4: Added options
     - added support for quiet option
-    
+
 - 0.2.3: Added options
     - added support for verbose flags
     - added support for no-interaction flag (on by default)
     - added flag for 'noAnsi' disabling ansi (false by default)
-    
+
 - 0.2.2: UI/UX Changes
     - added color output support using --ansi switch
     - removed Node 0.9 support from Travis integration
-    
+
 - 0.2.1: Code Refactor and Travis Integration
     - added travis configuration
 

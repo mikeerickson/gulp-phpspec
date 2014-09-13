@@ -1,6 +1,6 @@
 {
   "name": "gulp-phpspec",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "PHP PHPSpec plugin for Gulp",
   "main": "index.js",
   "dependencies": {
@@ -16,7 +16,7 @@
     "gulp": "^3.5.5"
   },
   "scripts": {
-    "test": "mocha && jshint ./*.js && jshint ./test/*.js"
+    "test": "mocha --reporter=spec && jshint ./*.js && jshint ./test/*.js"
   },
   "repository": {
     "type": "git",

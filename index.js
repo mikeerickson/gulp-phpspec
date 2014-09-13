@@ -3,9 +3,9 @@
 'use strict';
 
 var map   = require('map-stream'),
-    gutil = require('gulp-util'),
-    os    = require('os'),
-    exec  = require('child_process').exec;
+	gutil = require('gulp-util'),
+	os    = require('os'),
+	exec  = require('child_process').exec;
 
 module.exports = function(command, opt){
 	var counter = 0;
@@ -35,9 +35,10 @@ module.exports = function(command, opt){
 	if (typeof opt.clear === 'undefined') { opt.clear = false; }
 	if (typeof opt.flags === 'undefined') { opt.flags = ''; }
 	if (typeof opt.notify === 'undefined') { opt.notify = false; }
-	if (typeof opt.noInteract === 'undefined') { opt.noInteract = false; }
+	if (typeof opt.noInteraction === 'undefined') { opt.noInteraction = true; }
 	if (typeof opt.noAnsi === 'undefined') { opt.noAnsi = false; }
 	if (typeof opt.quiet === 'undefined') { opt.quiet = false; }
+	if (typeof opt.formatter === 'undefined') { opt.formatter = ''; }
 
 	return map(function (file, cb) {
 
@@ -48,8 +49,9 @@ module.exports = function(command, opt){
 		if (opt.testSuite) { cmd += ' ' + opt.testSuite; }
 		if (opt.testClass) { cmd += ' ' + opt.testClass; }
 		if (opt.verbose) { cmd += ' -' + opt.verbose; }
+		if (opt.formatter) { cmd += ' -f' + opt.formatter; }
 		if (opt.quiet) { cmd += ' --quiet'; }
-		if (opt.noInteract) { cmd += ' --no-interaction'; }
+		if (opt.noInteraction) { cmd += ' --no-interaction'; }
 		cmd += opt.noAnsi ? ' --no-ansi' : ' --ansi';
 
 		if(counter === 0) {
