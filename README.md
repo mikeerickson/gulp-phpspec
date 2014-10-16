@@ -16,34 +16,38 @@ var phpspec = require('gulp-phpspec');
 
 // option 1: default format
 gulp.task('phpspec', function() {
-	gulp.src('./spec/**/*.php').pipe(phpspec());
+	gulp.src('phpsec.yml').pipe(phpspec());
 });
 
 // option 2: with defined bin and options
 gulp.task('phpspec', function() {
 	var options = {debug: false};
-	gulp.src('./spec/**/*.php').pipe(phpspec('./vendor/bin/phpspec run',options));
+	gulp.src('phpspec.yml').pipe(phpspec('./vendor/bin/phpspec run',options));
 });
 
 // option 3: supply callback to integrate something like notification (using gulp-notify)
 
-var gulp    = require('gulp'),
-    notify  = require('gulp-notify'),
-    phpspec = require('gulp-phpspec');
+var gulp = require('gulp'),
+ notify  = require('gulp-notify'),
+ phpspec = require('gulp-phpspec'),
+ _       = require('lodash');
 
-gulp.task('phpspec', function() {
-	var options = {notify: false};
-	gulp.src('app/spec/**/*.php')
-		.pipe(phpspec('', options))
-		.on('error', notify.onError({
-			title: "Testing Failed",
-			message: "Error(s) occurred during test..."
-		}))
-		.pipe(notify({
-			title: "Testing Passed",
-			message: "All tests have passed..."
-		}));
-});
+  gulp.task('phpspec', function() {
+    gulp.src('phpspec.yml')
+      .pipe(phpspec('', {notify: true}))
+      .on('error', notify.onError(testNotification('fail', 'phpspec')))
+      .pipe(notify(testNotification('pass', 'phpspec')));
+  });
+
+function testNotification(status, pluginName, override) {
+	var options = {
+		title:   ( status == 'pass' ) ? 'Tests Passed' : 'Tests Failed',
+		message: ( status == 'pass' ) ? '\n\nAll tests have passed!\n\n' : '\n\nOne or more tests failed...\n\n',
+		icon:    __dirname + '/node_modules/gulp-' + pluginName +'/assets/test-' + status + '.png'
+	};
+	options = _.merge(options, override);
+  return options;
+}
 
 ```
 
@@ -111,6 +115,11 @@ Display PHPSpec custom formatters (ie pretty)
 
 ## Changelog
 
+- 0.3.1: Asset modifications
+    - Added new icons for pass and fail which can be used by notify plugin (see example below for usage)
+      /assets/test-pass.png
+      /assets/test-fail.png
+    
 - 0.3.0: Bug Fixes
   - refactored noInteraction option to match PHPSpec option (was called noInteract)
 
