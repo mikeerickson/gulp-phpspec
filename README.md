@@ -16,7 +16,7 @@ var phpspec = require('gulp-phpspec');
 
 // option 1: default format
 gulp.task('phpspec', function() {
-	gulp.src('phpsec.yml').pipe(phpspec());
+	gulp.src('phpspec.yml').pipe(phpspec());
 });
 
 // option 2: with defined bin and options
