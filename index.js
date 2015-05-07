@@ -87,8 +87,9 @@ module.exports = function(command, opt){
 				if (opt.notify) {
 					cb(error, file);
 				}
-
 			});
+		} else {
+			return cb(null, file);
 		}
 	});
 
