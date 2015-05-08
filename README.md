@@ -115,10 +115,14 @@ Display PHPSpec custom formatters (ie pretty)
 
 ## Changelog
 
+- 0.3.2: Bug Fixes
+    - Fixed issue related to spec files not being completed due to missing callback
+
 - 0.3.1: Asset modifications
     - Added new icons for pass and fail which can be used by notify plugin (see example below for usage)
       /assets/test-pass.png
       /assets/test-fail.png
+    
     
 - 0.3.0: Bug Fixes
   - refactored noInteraction option to match PHPSpec option (was called noInteract)
