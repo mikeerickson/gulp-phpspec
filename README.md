@@ -115,6 +115,9 @@ Display PHPSpec custom formatters (ie pretty)
 
 ## Changelog
 
+- 0.4.2: Bug Fixes and Refactored Testing
+    - Refactorting test cover to test beyond binary testing
+    
 - 0.3.2: Bug Fixes
     - Fixed issue related to spec files not being completed due to missing callback
 
