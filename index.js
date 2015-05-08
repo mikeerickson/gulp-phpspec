@@ -64,7 +64,7 @@ module.exports = function (command, opt) {
 		if (opt.noInteraction) { cmd += ' --no-interaction'; }
 
 		// override dryRun to force trun if only testing
-		if (opt.testing) opt.dryRun = true;
+		if (opt.testing) { opt.dryRun = true; }
 
 		cmd += opt.noAnsi ? ' --no-ansi' : ' --ansi';
 

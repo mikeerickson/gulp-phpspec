@@ -6,10 +6,21 @@
 
 'use strict';
 
-var phpspec = require('../'),
-    should  = require('should');
+var phpspec = require('../');
 
+var should  = require('should');
+var assert  = require('chai').assert;
+//var expect  = require('chai').expect;
+
+// LOAD TEST LIBRARY
+// =============================================================================
+// just in case we dont have it installed globally, need to load it here
 require('mocha');
+
+// TEST PLUGIN
+// =============================================================================
+// TODO: Add more tests
+// more tests will be added here as we flush out the upgrade
 
 describe('gulp-phpspec', function() {
 
@@ -23,7 +34,9 @@ describe('gulp-phpspec', function() {
 				caughtErr = err;
 			}
 
+			assert.notOk(caughtErr);
 			should.not.exist(caughtErr);
+
 			//caughtErr.message.indexOf('required').should.be.above(-1);
 			done();
 		});
@@ -61,6 +74,8 @@ describe('gulp-phpspec', function() {
 			}
 
 			should.not.exist(caughtErr);
+			assert(result);
+
 			//console.log('message', caughtErr);
 			//caughtErr.message.should.equal('Invalid PHPSpec Binary');
 
