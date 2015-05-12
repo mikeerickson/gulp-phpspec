@@ -6,21 +6,21 @@
 
 'use strict';
 
+var config  = require('../config');
 var phpspec = require('../');
-
 var should  = require('should');
 var assert  = require('chai').assert;
-//var expect  = require('chai').expect;
+var expect  = require('chai').expect;
+
 
 // LOAD TEST LIBRARY
 // =============================================================================
 // just in case we dont have it installed globally, need to load it here
 require('mocha');
 
+
 // TEST PLUGIN
 // =============================================================================
-// TODO: Add more tests
-// more tests will be added here as we flush out the upgrade
 
 describe('gulp-phpspec', function() {
 
@@ -55,7 +55,7 @@ describe('gulp-phpspec', function() {
 
 			// assert
 			should.exist(caughtErr);
-			caughtErr.message.should.equal('Invalid PHPSpec Binary');
+			caughtErr.message.should.equal(config.messages.invalidBinary);
 
 			done();
 
@@ -65,7 +65,7 @@ describe('gulp-phpspec', function() {
 
 			var caughtErr;
 			var result = '';
-			var options = {dryRun: true, testing: true};
+			var options = {testing: true};
 
 			try {
 				result = phpspec('',options);
@@ -76,11 +76,66 @@ describe('gulp-phpspec', function() {
 			should.not.exist(caughtErr);
 			assert(result);
 
-			//console.log('message', caughtErr);
-			//caughtErr.message.should.equal('Invalid PHPSpec Binary');
+			done();
+
+		});
+
+		it('should append `run` flag when bin path supplied', function(done){
+
+			var caughtErr;
+			var result  = '';
+			var options = {debug: true, testing: true, silent: true, dryRun: true, testClass: 'testClass.php'};
+
+			try {
+				result = phpspec('test', options);
+			} catch (err) {
+				caughtErr = err;
+			}
+
+			should.not.exist(caughtErr);
+			expect(result).to.contain('test run');
 
 			done();
 
 		});
+
+		it('should return supplied `options` as part of result (where applicable)',function(done){
+
+			var caughtErr;
+			var options   = {testing: true, testClass: 'testClass.php', noInteraction: true, noAnsi: true};
+			var result    = '';
+
+			try {
+				result = phpspec('',options);
+			} catch ( err ) {
+					caughtErr = err;
+			}
+
+			should.not.exist(caughtErr);
+			expect(result).to.contain(options.testClass);
+			expect(result).to.contain('--no-interaction');
+			expect(result).to.contain('--no-ansi');
+			done();
+	});
+
+		it('should provide default values when options not supplied',function(done){
+
+			var caughtErr;
+			var result = '';
+
+			try {
+				result = phpspec('',{testing: true});
+			} catch ( err ) {
+					caughtErr = err;
+			}
+
+			should.not.exist(caughtErr);
+			expect(result).to.contain('--no-interaction');
+			expect(result).to.contain('--ansi');
+
+			done();
+
+		});
+
 
 });
