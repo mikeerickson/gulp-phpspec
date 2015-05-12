@@ -84,7 +84,7 @@ describe('gulp-phpspec', function() {
 
 			var caughtErr;
 			var result  = '';
-			var options = {debug: true, testing: true, silent: true, dryRun: true, testClass: 'testClass.php'};
+			var options = {testing: true, silent: true, dryRun: true, testClass: 'testClass.php'};
 
 			try {
 				result = phpspec('test', options);
@@ -136,6 +136,5 @@ describe('gulp-phpspec', function() {
 			done();
 
 		});
-
 
 });

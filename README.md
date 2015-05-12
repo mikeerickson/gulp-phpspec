@@ -117,7 +117,7 @@ Display PHPSpec custom formatters (ie pretty)
 
 - 0.5.0: Complete refactoring 
     - Refacorted `index.js` and added library files (currently only phpspec)
-    - This index.js refactor will be ported acosss all gulp-xxx plugins 
+    - This index.js refactor will be ported acosss all gulp-xxx plugins in future releases
     
 - 0.4.2: Bug Fixes and Refactored Testing
     - Refactorting test cover to test beyond binary testing

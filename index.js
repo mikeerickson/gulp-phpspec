@@ -12,14 +12,15 @@ var	os      = require('os');
 var chalk   = require('chalk');
 var	exec    = require('child_process').exec;
 var core    = require('./lib/phpspec.js');
+var version = require('./package').version;
 
-
-// PLUGIN MAIN ENTRYPOINT
+// PLUGIN MAIN ENTRY POINT
 // =============================================================================
 
 module.exports = function (command, opt) {
 
 	var counter = 0;
+	if ( ! opt) { opt = {} ; }
 
 	// this will typically take place when user supplied `options` parameter without defining path to PHPSpec
 	if (typeof command === 'object') {
@@ -38,14 +39,18 @@ module.exports = function (command, opt) {
 		}
 	}
 
-	if ( ! opt) { opt = {} ; }
-
+	// build up the command to execute
 	command = core.buildCommand(command, opt);
 
+	// if we are in `testing` mode (used when executing mocha tests)
 	if ( opt.testing ) {
+		if (opt.debug) {
+			gutil.log(chalk.yellow('\n       *** Debug Command [v' + version + ']: ' + command + '***\n'));
+		}
 		return command;
 	}
 
+	// if we got this far, things must be good so lets proceed
 	return map(function (file, cb) {
 
 		var cmd      = '';
@@ -54,10 +59,10 @@ module.exports = function (command, opt) {
 			counter++;
 
 			if (opt.debug) {
-				gutil.log(chalk.yellow('\n       *** Debug Cmd: ' + cmd + '***\n'));
+				gutil.log(chalk.yellow('\n       *** Debug Command v' + version + ': ' + cmd + ' ***\n'));
 			}
 
-			if(opt.testing) {
+			if (opt.testing) {
 				return cmd;
 			} else {
 				// execute call
