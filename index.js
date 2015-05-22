@@ -54,7 +54,7 @@ module.exports = function (command, opt) {
 	// if we got this far, things must be good so lets proceed
 	return map(function (file, cb) {
 
-		var cmd      = '';
+		var cmd      = command;
 
 		if (counter === 0) {
 			counter++;
@@ -67,6 +67,7 @@ module.exports = function (command, opt) {
 				return cmd;
 			} else {
 				// execute call
+
 				exec(cmd, function (error, stdout, stderr) {
 
 					// handle any errors and log output to buffer

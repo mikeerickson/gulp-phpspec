@@ -1,6 +1,6 @@
 {
   "name": "gulp-phpspec",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "PHP PHPSpec plugin for Gulp",
   "main": "index.js",
   "dependencies": {
