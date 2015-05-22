@@ -12,6 +12,8 @@ var should  = require('should');
 var assert  = require('chai').assert;
 var expect  = require('chai').expect;
 
+var version = require('../package').version;	// get plugin version
+
 
 // LOAD TEST LIBRARY
 // =============================================================================
@@ -136,5 +138,26 @@ describe('gulp-phpspec', function() {
 			done();
 
 		});
+
+		it('should return version information in result',function(done){
+
+			var caughtErr;
+			var options = {testing: true};
+			var result = '';
+
+			try {
+				result = phpspec('', options);
+			} catch ( err ) {
+					caughtErr = err;
+			}
+
+			should.not.exist(caughtErr);
+			expect(result).to.contain('--version');
+			should.exist(version);
+
+			done();
+
+		});
+
 
 });

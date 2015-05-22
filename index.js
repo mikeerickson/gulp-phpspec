@@ -47,6 +47,7 @@ module.exports = function (command, opt) {
 		if (opt.debug) {
 			gutil.log(chalk.yellow('\n       *** Debug Command [v' + version + ']: ' + command + '***\n'));
 		}
+		command += '--version=' + version;
 		return command;
 	}
 
