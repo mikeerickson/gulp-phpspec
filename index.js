@@ -54,7 +54,7 @@ module.exports = function (command, opt) {
 	// if we got this far, things must be good so lets proceed
 	return map(function (file, cb) {
 
-		var cmd      = command;
+		var cmd = command;
 
 		if (counter === 0) {
 			counter++;

@@ -1,4 +1,9 @@
 ## gulp-phpspec Changelog
+  
+- 0.5.4: Bug Fixes
+    - Fixed issue with using `clear` property on Windows
+    - Closed Issues
+      [9] (https://github.com/mikeerickson/gulp-phpspec/issues/9) https://github.com/mikeerickson/gulp-phpspec/issues/9
 
 - 0.5.2: Bug Fixes
     - Fixed regression error in 0.5.0 release
