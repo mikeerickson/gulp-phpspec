@@ -11,7 +11,7 @@
     "gulp-logger": "0.0.2",
     "gulp-notify": "^2.2.0",
     "gulp-todo": "^2.6.0",
-    "gulp-util": "~2.2.14",
+    "gulp-util": "~3.0.8",
     "jshint": "^2.7.0",
     "jshint-stylish": "^1.0.2",
     "lodash": "^3.8.0",
