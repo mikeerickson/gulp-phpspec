@@ -15,7 +15,7 @@
     "gulp": "3.9.1",
     "gulp-jshint": "2.0.4",
     "gulp-logger": "0.0.2",
-    "gulp-notify": "2.2.0",
+    "gulp-notify": "3.0.0",
     "gulp-shell": "0.5.2",
     "gulp-todo": "5.2.0",
     "jshint": "2.9.4",
